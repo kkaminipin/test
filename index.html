@@ -4,6 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      .ellipse {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-break: break-all;
+      }
+
+      .wrap {
+        min-height: 100vh;
+        padding: 100px;
+      }
+      .content {
+        display: flex;
+        align-items: center;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: purple;
+      }
+      .content .left {
+        width: 100%;
+      }
+      .content .left .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 215px;
+        background-color: #cdd5e5;
+      }
+      .content .right {
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
     <div class="wrap">
@@ -16,16 +60,16 @@
           <div class="right">
             <div class="name">kkami</div>
             <ul>
-              <li>
+              <li class="ellipse">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati sequi soluta placeat magnam id omnis optio dolorum temporibus nemo veritatis odio quaerat unde sapiente
                 consectetur deserunt, ad expedita ut.
               </li>
-              <li>
+              <li class="ellipse">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde aliquid magni explicabo eveniet excepturi cum atque repellendus natus hic, iure illum reiciendis id neque magnam
                 possimus. Possimus doloribus distinctio laudantium.
               </li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, obcaecati?</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolores aliquid tenetur labore consequuntur veniam at tempora vitae asperiores ipsum.</li>
+              <li class="ellipse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, obcaecati?</li>
+              <li class="ellipse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolores aliquid tenetur labore consequuntur veniam at tempora vitae asperiores ipsum.</li>
             </ul>
           </div>
         </div>
