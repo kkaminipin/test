@@ -13,40 +13,39 @@
       a {
         text-decoration: none;
       }
-
       .ellipse {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
         word-break: break-all;
       }
-
       .wrap {
         min-height: 100vh;
         padding: 100px;
       }
       .content {
-        display: flex;
-        align-items: center;
+        display: table;
+        table-layout: fixed;
         max-width: 1000px;
         width: 100%;
+        padding: 30px;
         margin: 0 auto;
         background-color: purple;
       }
       .content .left {
-        width: 100%;
-      }
-      .content .left .box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: table-cell;
         width: 170px;
         height: 215px;
         background-color: #cdd5e5;
+        vertical-align: middle;
+        text-align: center;
+      }
+      .content .left {
       }
       .content .right {
-        width: 100%;
-        padding: 30px;
+        display: table-cell;
+        padding-left: 20px;
+        vertical-align: middle;
       }
       .content .right .name {
         margin-bottom: 20px;
@@ -58,9 +57,7 @@
       <header class="header"></header>
       <main class="main">
         <div class="content">
-          <div class="left">
-            <div class="box">Box</div>
-          </div>
+          <div class="left">img</div>
           <div class="right">
             <div class="name">kkami</div>
             <ul>
